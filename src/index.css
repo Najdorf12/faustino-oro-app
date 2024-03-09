@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+#nav-btns li {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: color;
+  z-index: 1000;
+}
+#nav-btns li:focus,
+#nav-btns li:hover {
+  color: whitesmoke;
+  z-index: 1000;
+}
+#nav-btns li:focus:after,
+#nav-btns li:hover:after {
+  width: 100%;
+  left: 0%;
+  z-index: 1000;
+}
+#nav-btns li:after {
+  z-index: 1000;
+  content: "";
+  pointer-events: none;
+  bottom: -5px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(214, 166, 78);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 500ms;
+  transition-property: width, left;
+}
+/* Chessboard */
+.chessboard-wrapper {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.line-about {
+  width: 60px;
+  background-color: #f7ae27;
+  height: 4px;
+  z-index: 100;
+  position: absolute;
+  bottom: 25px;
+  left: 21%;
+  border-radius: 1px;
+}
+#chessboard-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  z-index: 1000;
+}
+.btns-chessboard {
+  display: flex;
+  gap: 3rem;
+  z-index: 1000;
+  & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s;
+    color: rgb(187, 189, 192);
+    & i {
+      color: #f7ae27;
+      transition: all 0.3s;
+    }
+  }
+}
+.btns-chessboard button:hover {
+  font-weight: 600;
+  transform: scale(1.4);
+  & i {
+    color: whitesmoke;
+  }
+}
+#btn-game {
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+#btn-game:hover {
+  transform: scale(1.1);
+  color: #f7ae27;
+}
+
+/* Contact */
+.form-container {
+  z-index: 100;
+  min-width: 260px;
+  max-width: 500px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #FF9671, #FFC75F) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  margin: 2rem auto;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.form-container button:active {
+  scale: 0.95;
+}
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #FFC75F;
+}
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #FFC75F;
+}
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 10px 14px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all .3s;
+}
+.form-container .form-submit-btn:hover {
+  background-color: #ca9c46;
+  border-color: #fff;
+  color:whitesmoke;
+  transform:scale(1.1)
+}
+
+@media (min-width: 800px) {
+  .btns-chessboard {
+    gap: 6rem;
+    & button {
+      font-size: 2.5rem;
+    }
+  }
+  #chessboard-container {
+    margin-top: 6rem;
+  }
+  .line-about {
+    width: 80px;
+    bottom: 13px;
+    left: 80px;
+  }
+  
+}
+
+@media(min-width:1300px){
+  #box-black-contact{
+    height: 83.5dvh;
+    overflow-y: hidden;
+    }
+}
