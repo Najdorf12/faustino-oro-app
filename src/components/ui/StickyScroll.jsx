@@ -48,7 +48,7 @@ const StickyScroll = ({ content, contentClassName }) => {
       >
         <section className="absolute w-full inset-2 py-4">
           <Link to={"/"}>
-          <i className="-mt-3 bx bx-left-arrow-circle text-[#f7ae27] font-light text-4xl pl-4 hover:cursor-pointer hover:scale-110 hover:text-slate-600 duration-500 md:text-6xl md:pl-12 md:mt-2"></i>
+          <i className="-mt-3 bx bx-left-arrow-circle text-[#f7ae27] font-light text-5xl pl-4 hover:cursor-pointer hover:scale-110 hover:text-slate-600 duration-500 md:text-6xl md:pl-12 md:mt-2"></i>
           </Link>
           <h1 className="px-1 pb-4 mt-4 mr-5 bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-slate-600 font-semibold text-4xl self-center leading-6 text-center md:text-6xl lg:mt-8 lg:mb-4">
             Proximos torneos

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
     <Navbar></Navbar>
-    <h4 className="bg-[#212121] font-releway w-full text-center text-3xl font-semibold pt-10 pb-6 text-[#717171] lg:text-4xl lg:text-start lg:pl-20">Let's talk</h4>
+    <h4 className="bg-[#212121] font-releway w-full text-start pl-10 text-3xl font-semibold pt-10 pb-6 text-[#717171] lg:text-4xl lg:text-start lg:pl-20">Let's talk</h4>
     <section id="box-black-contact" className="w-full flex flex-col bg-[#212121] justify-center items-center lg:w-3/5">
       <div className="form-container px-1 lg:flex lg:justify-start lg:h-4/5 lg:-mt-14">
         <form className="form">
