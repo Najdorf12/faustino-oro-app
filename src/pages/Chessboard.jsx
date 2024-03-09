@@ -130,7 +130,7 @@ function Chessboard1() {
             id="CustomStyledBoard"
             position={game.fen()}
             draggable={false}
-            animationDuration={300}
+            animationDuration={200}
             customDarkSquareStyle={{ backgroundColor: "rgb(51, 50, 50)" }}
             customLightSquareStyle={{ backgroundColor: "#ca870c" }}
           />

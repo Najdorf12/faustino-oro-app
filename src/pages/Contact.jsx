@@ -38,7 +38,7 @@ const Contact = () => {
           <figure className="-ml-28 -mt-12 max-w-lg lg:self-center">
             <img src={imgContact} alt="" />
           </figure>
-          <ul className="self-center text-3xl pb-4 text-center text-[#ca9c46] flex gap-6 lg:pb-10 lg:text-4xl lg:gap-10">
+          <ul className="self-center text-3xl pb-4 text-center text-[#ca9c46] flex gap-6 lg:pb-4 lg:text-4xl lg:gap-10">
             <li><i className='bx bx-phone'></i></li>
             <li><i className='bx bxl-gmail'></i></li>
             <li><i className='bx bxl-instagram'></i></li>

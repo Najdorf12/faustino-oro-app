@@ -21,7 +21,7 @@ const Home = () => {
           <h1 className="bg-clip-text text-transparent font-montserrat bg-gradient-to-b from-neutral-100 to-neutral-500 px-4  text-gray-200 font-extrabold text-4xl mt-44 md:text-6xl md:mt-64">
             FAUSTINO ORO
           </h1>
-          <p className="font-raleway font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#f7ae27] to-neutral-500 md:text-xl">
+          <p className="font-raleway font-bold bg-clip-text text-transparent bg-gradient-to-b from-[#f8ca74] to-neutral-500 md:text-xl">
             MAESTRO FIDE
           </p>
         </article>
