@@ -27,7 +27,7 @@ const Home = () => {
         </article>
       </section>
 
-      <section className="px-4 pt-4 w-full h-screen flex flex-col items-center justify-center text-center lg:flex-row lg:text-start lg:pl-10">
+      <section className="px-4 py-8 w-full flex flex-col items-center justify-center text-center lg:flex-row lg:text-start lg:h-screen lg:pl-10">
         <p className="font-extrabold font-montserrat text-3xl text-neutral-900 lg:text-7xl lg:w-2/3 lg:leading-tight lg:pl-8  xl:leading-normal">
           LA VIDA ES UNA INTERRUPCIÓN INSÍPIDA DEL{" "}
           <span className="text-[#f09c01]">AJEDREZ</span>
