@@ -29,7 +29,7 @@ const BackgroundBeamsDemo = () => {
           style={{
             textWrap: "balance"
           }}
-          className="text-center px-4 font-raleway text-neutral-500 max-w-5xl mx-auto mt-8 leading-5 text-sm text-semibold  relative z-10 md:font-semibold md:text-base md:mt-12 "
+          className="text-center px-4 font-raleway text-neutral-500 max-w-5xl mx-auto mt-8 leading-5 text-sm text-semibold  relative z-10 md:font-semibold md:text-base md:mt-8 "
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
           eveniet! Ab, quasi quis dolorum eos nemo assumenda velit odit suscipit
