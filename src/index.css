@@ -196,7 +196,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  align-self: flex-start;
+  align-self: center;
   font-family: inherit;
   color: #717171;
   font-weight: 600;
